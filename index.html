@@ -19,7 +19,7 @@
             background: url("Galaxy Background.jpg") no-repeat center center fixed;
             background-size: cover;
             font-family: 'Roboto', sans-serif;
-            color: white;
+            color: black; /* Default text color for better contrast */
             line-height: 1.6;
             display: flex;
             flex-direction: column;
@@ -30,12 +30,21 @@
 
         /* Content Box */
         .content {
-            background-color: rgba(0, 0, 0, 0.6); /* Transparent black */
+            background-color: rgba(255, 255, 255, 0.8); /* Light semi-transparent white background */
             padding: 20px;
             border-radius: 10px;
             text-align: center;
             width: 90%;
             max-width: 600px;
+        }
+
+        /* Section Styling (e.g., Promises) */
+        .section {
+            background-color: rgba(255, 255, 255, 0.9); /* Slightly darker background for better contrast */
+            margin: 20px 0;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a slight shadow for emphasis */
         }
 
         /* Image Styling */
@@ -49,7 +58,7 @@
 
         /* Separator Line */
         hr {
-            border: 1px solid white;
+            border: 1px solid black;
             margin: 20px 0;
         }
 
@@ -85,37 +94,45 @@
         <img src="Chloe.png" alt="Chloe's Picture">
         <p>Name: Chloe Y. Endaya</p>
         <p>Nickname: Xhlo</p>
-        <p>Age: 12</p>
+        
         <p>Age: 14</p>
         <p>Birthday: December 11, 2010</p>
         <p>Height: 4'11"</p>
         <p>Zodiac: Sagittarius</p>
         
-        <h3 id="promises">My promise to our relationship</h3>
-        <hr>
-        <p>* NEVER cheat</p>
-        <p>* I'll be the better one at all times (for some reason I feel shit)</p>
-        <p>* Marry Her ?? (impossible now)</p>
-        <p>* Update her before or after something I did</p>
-        <p>* Priority her at all times</p>
-        <p>* Lowkey but not gonna deny her</p>
-        <p>* Always make her feel loved</p>
+        <!-- Promises Section -->
+        <div class="section" id="promises">
+            <h3>My promise to our relationship</h3>
+            <hr>
+            <p>* NEVER cheat</p>
+            <p>* I'll be the better one at all times (for some reason I feel shit)</p>
+            <p>* Marry Her ?? (impossible now)</p>
+            <p>* Update her before or after something I did</p>
+            <p>* Priority her at all times</p>
+            <p>* Lowkey but not gonna deny her</p>
+            <p>* Always make her feel loved</p>
+        </div>
         
-        <h3>Things she loves to do</h3>
-        <hr>
-        <p>* Clingy 24/7</p>
-        <p>* Definitely lie down in bed</p>
-        
-        <h3 id="future">Plans with her in the future</h3>
-        <hr>
-        <p>* Meet up (because of LDR)</p>
-        <p>* Bonding in the Future</p>
-        <p>* Build our own dream house</p>
-        <p>* Legal to both of our parents</p>
-        <p>* Get married (Sigh*)</p>
-        <p>* Have our own family (Yeah, I know I'm delusional)</p>
-        <p>* Make our children raise pets</p>
-        <p>* Make sure that they have a happy life</p>
+        <!-- Other Sections -->
+        <div class="section">
+            <h3>Things she loves to do</h3>
+            <hr>
+            <p>* Clingy 24/7</p>
+            <p>* Definitely lie down in bed</p>
+        </div>
+
+        <div class="section" id="future">
+            <h3>Plans with her in the future</h3>
+            <hr>
+            <p>* Meet up (because of LDR)</p>
+            <p>* Bonding in the Future</p>
+            <p>* Build our own dream house</p>
+            <p>* Legal to both of our parents</p>
+            <p>* Get married (Sigh*)</p>
+            <p>* Have our own family (Yeah, I know I'm delusional)</p>
+            <p>* Make our children raise pets</p>
+            <p>* Make sure that they have a happy life</p>
+        </div>
     </div>
 </body>
 </html>
